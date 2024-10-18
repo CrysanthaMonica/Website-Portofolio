@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crysantha's Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/logo-monic.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./assets/logo-monic.png" sizes="32x32">
+  <link rel="icon" type="image/x-icon" href="./assets/logo-monic.png">
+  <link rel="shortcut icon" href="./assets/logo-monic.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="assets/logo-monic-no-bg.png" alt="Logo Crysantha Monica Lim">
+      </div>
+      <ul class="nav-links">
+        <li><a onclick="scrollToAbout()">About</a></li>
+        <li><a onclick="scrollToExperience()">Experience</a></li>
+        <li><a onclick="scrollToProject()">Projects</a></li>
+        <li><a class="cml-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="black-screen" onclick="toggleMenu()"></div>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="assets/logo-monic-no-bg.png" alt="Logo Crysantha Monica Lim">
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li class="cml-li-first"><a onclick="toggleMenu() ; scrollToAbout()">About</a></li>
+          <li><a  onclick="toggleMenu() ; scrollToExperience()">Experience</a></li>
+          <li><a  onclick="toggleMenu() ; scrollToProject()">Projects</a></li>
+          <li><a  onclick="toggleMenu() ; scrollToContact()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+
+    
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-shapes-no-bg.png" alt="Crysahtha's profile picture" />
+      </div>
+      <div class="section__text cml-profile">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Crysantha Monica Lim</h1>
+        <!-- perubahan -->
+        <p class="section__text__p2">
+          <span class="typed-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        <!-- sampe sini yaa -->
+        <div class="btn-container btn-container-cml">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV ATS - Crysantha Monica Lim [16-10-24] .pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/crysantha-monica-lim-02014526a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/CrysanthaMonica'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" id="about-target">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- INI GAMBAR YANG BAGIAN ABOUT ME -->
+        <div class="section__pic-container">
+          <div class="slider">
+            <img src="assets/assets/p2.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p1.jpg" class="slides" style="display: block;">
+            <img src="assets/assets/p4.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p12.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p3.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p5.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p6.JPG" class="slides" style="display: none;">
+            <img src="assets/assets/p7.JPG" class="slides" style="display: none;">
+            <img src="assets/assets/p9.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p8.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p10.jpg" class="slides" style="display: none;">
+            <img src="assets/assets/p11.jpg" class="slides" style="display: none;">
+            
+            <!-- Tombol navigasi -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><b>System Analyst</b> in IT Architechture <br> at BINUS IT Division</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> <b>Data Science Student</b> <br> at BINUS University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi! My name is <b>Crysantha Monica Lim</b>,
+              a passionate third-year Data Science student at BINUS University.
+              Currently, I work as a System Analytst in the IT Architechture Division at BINUS IT Division, 
+              where I apply my technical knowledge to streamline and enhance system integration. My enthusiasm lies in crafting
+              data-driven solutions and analyzing the Software Development Life Cycle (SLDC) to drive efficiency in software engineering. 
+              I'm actively seeking intership opportunities to expand my experience and am excited to connect with others who share a love for technology, data, and innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow cml-arrow-bob"
+        onclick="scrollToExperience()"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" id="experience-target">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container cml-details-container">
+            <h2 class="experience-sub-title">Data Skill</h2>
+            <div class="article-container cml-experience-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Competent</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spark SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Streamlit</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Verulam Blue</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container cml-details-container">
+            <h2 class="experience-sub-title">Others Skill</h2>
+            <div class="article-container cml-experience-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.Net</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Azure</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CISCO</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Draw.io</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate/p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow cml-arrow-bob"
+        onclick="scrollToProject()"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1" id="project-target">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="tabs">
+        <button class="tab-link" onclick="openTab('all', event)">All</button>
+        <button class="tab-link" onclick="openTab('data-analyst', event)">Data Analyst</button>
+        <button class="tab-link" onclick="openTab('data-science', event)">Data Science</button>
+        <button class="tab-link" onclick="openTab('ai-projects', event)">AI Projects</button>
+        <button class="tab-link" onclick="openTab('other', event)">Other</button>
+      </div>
+        <div class="cml-project-container" id="project-container">
+
+
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+      <p class="section__text__p1" id="contact-target">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:crysantha.lim@gmail.com">crysantha.lim@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/crysantha-monica-lim-02014526a/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav id = 'footer-nav'>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Crysantha Monica Lim. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script>
+function getOffset() {
+  const baseOffset = 10 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+  console.log(baseOffset)
+  if (window.innerWidth <= 768) {
+    return baseOffset * 0.75; 
+  } else if (window.innerWidth <= 1200) {
+    console.log(baseOffset * 4.0)
+    return baseOffset * 0.75;
+  } else {
+    return baseOffset * 0.75; 
+  }
+}
+
+function scrollToAbout() {
+  const target = document.querySelector('#about-target');
+  if (target) {
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offset = getOffset();
+    window.scrollTo({
+      top: targetPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function scrollToExperience() {
+  const target = document.querySelector('#experience-target');
+  if (target) {
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offset = getOffset();
+    window.scrollTo({
+      top: targetPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function scrollToProject() {
+  const target = document.querySelector('#project-target');
+  if (target) {
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offset = getOffset();
+    window.scrollTo({
+      top: targetPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function scrollToContact() {
+  const target = document.querySelector('#contact-target');
+  if (target) {
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offset = getOffset();
+    window.scrollTo({
+      top: targetPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+  window.onload = function() {
+
+
+  gsap.registerPlugin(ScrollTrigger)
+
+
+  const profileEntry = gsap.from(".section__text p, .btn-container-cml, #socials-container", {
+    scrollTrigger: {
+      trigger: "#profile",        
+      start: "top 80%",           
+      toggleActions: "play none none none", 
+    },
+    x: 100,                       
+    opacity: 0,                   
+    duration: 0.8,               
+    ease: "power2.out",           
+    stagger: 0.2                 
+  })
+}
+
+const aboutText = gsap.utils.toArray("#about .section__text__p1, #about .title")
+  const aboutImages = gsap.utils.toArray("#about .section-container img")
+
+  gsap.from(aboutText, {
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.2,
+  });
+
+  gsap.from(aboutImages, {
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.2,
+  });
+
+  const experienceText = gsap.utils.toArray("#experience .section__text__p1, #experience .title")
+  const experienceDetails = gsap.utils.toArray("#experience .experience-details-container")
+  const experienceItems = gsap.utils.toArray("#experience .article-container article")
+  gsap.from(experienceText, {
+    scrollTrigger: {
+      trigger: "#experience",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.2,
+  });
+
+  gsap.from(experienceDetails, {
+    scrollTrigger: {
+      trigger: "#experience",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    stagger: 0.2,
+  });
+
+  gsap.from(experienceItems, {
+    scrollTrigger: {
+      trigger: "#experience", 
+      start: "top 80%",       
+      toggleActions: "play none none none", 
+    },
+    x: 100,                   
+    opacity: 0,               
+    duration: 0.8,           
+    ease: "power2.out",       
+    stagger: 0.2,             
+  })
+
+  </script>
+
+</html>

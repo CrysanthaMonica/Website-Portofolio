@@ -1,0 +1,248 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+   
+  /* perubahan */
+  .section-container {
+    flex-direction: column; /* Atur elemen secara vertikal */
+    gap: 2rem; /* Sesuaikan jarak antar elemen */
+  }
+  .section__pic-container,
+  .about-details-container {
+    min-height: fit-content; /* Tinggi otomatis mengikuti konten */
+    width: 100%; /* Lebar penuh pada layar kecil */
+  }
+  /* sampe sini yaa------- */
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  #profile{
+    padding-top: 5rem;
+    height: 100%;
+  }
+  .arrow {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .section__pic-container, /*perubahan*/
+  .about-details-container {
+    min-height: 250px; /* Sesuaikan tinggi minimum untuk layar kecil */
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cml-experience-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+
+  #about, #experience, #projects, #contact{
+    margin-top: 10rem;
+  }
+
+  #contact{
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cml-article-container{
+    max-width: 15rem;
+  }
+
+  .cml-project-title{
+    font-size:1rem;
+  }
+  .cml-project-desc{
+    font-size:.8rem;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  #contact {
+    height: 40vh;
+  }
+  #profile {
+    height: 80vh;
+    margin-bottom: 0;
+  }
+
+  .cml-profile{
+    padding-top: 2rem;
+  }
+  #about, #experience, #projects{
+    margin-top: 5rem;
+  }
+  .cml-experience-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+  .cml-details-container{
+    max-width: 15rem;
+  }
+  article {
+    font-size: 1rem;
+    max-width: 5rem;
+  }
+  article .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  article h3{
+    font-size: .8rem;
+    display: inline-block;
+  }
+  article p{
+    font-size: .5rem;
+    display: inline-block;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .section__pic-container, /*perubahan*/
+  .about-details-container {
+    min-height: 250px; /* Sesuaikan tinggi minimum untuk layar kecil */
+  }
+
+  .cml-project-container {
+    gap: .8rem;
+  }
+
+  .cml-article-container{
+    max-width: 8rem;
+  }
+
+  .cml-project-title{
+    font-size:1rem;
+    margin-top: 0rem;
+    margin-bottom: 0px !important;
+  }
+  .cml-project-desc{
+    font-size:.7rem;
+    margin-bottom: .5rem;
+  }
+
+  .cml-project-btn-container{
+    gap: .5rem;
+  }
+
+  .cml-primary-button, .cml-secondary-button{
+    font-size:.8rem;
+    padding:.5rem;
+    height: 100%;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-links {
+    width: 40%;
+  }
+
+  .menu-links.open a {
+    font-size:1rem;
+  }
+
+
+  .cml-project-chevron {
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+  }
+
+  .cml-project-chevron.rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  .cml-project-desc {
+    display: none; 
+  }
+  .cml-project-desc.hidden {
+    display: block; 
+  }
+}
