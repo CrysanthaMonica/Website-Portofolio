@@ -389,6 +389,15 @@ section {
   text-align: center;
 }
 
+/*tambahan ukuran font */
+.details-container p {
+  font-size: 0.9rem; /* atau misalnya 14px */
+}
+
+.details-container h3 {
+  font-size: 1rem; /* opsional, jika kamu ingin headernya juga lebih kecil */
+}
+
 .section-container { /*perubahan*/
   gap: 4rem;
   height: 80%;
