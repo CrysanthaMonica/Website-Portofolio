@@ -81,7 +81,7 @@ const projectData = {
     {
     "title": "Respiratory Disease Audio-Based Classification",
     "desc": "<br> Developed and evaluated hybrid CNN+LSTM and CNN+SVM models for classifying clinical respiratory audio into COPD and non-COPD categories.<br> Applied MFCC-based feature extraction and advanced preprocessing techniques such as pre-emphasis, noise reduction, and time-based augmentation.<br> Achieved 88% test accuracy using CNN+LSTM model and provided comparative insights on model performance to support diagnostic applications in the medical field.",
-    "image": "./assets/portofolio_pic/progress.png",
+    "image": "./assets/portofolio_pic/respiratory.jpeg",
     "category": "data-science",
     "github": "https://github.com/CrysanthaMonica/Respiratory-Disease-Audio-Based-Machine-Learning",
     "liveDemo": ""
@@ -89,7 +89,7 @@ const projectData = {
     {
       "title": "Comparative Analysis of 1-Stage and 2-Stage Text Classification Using IndoBERT",
       "desc": "<br> Built and evaluated IndoBERT-based models to classify Indonesian sports news.<br> Compared a direct 1-stage model with a 2-stage hierarchical approach, where the first stage classifies texts as Sepak Bola or Non-Sepak Bola, and the second classifies Liga categories.<br> Achieved 100% accuracy and F1-score for minority class (Liga Italia) using the 2-stage model, highlighting the benefit of hierarchical modeling in imbalanced datasets.",
-      "image": "./assets/portofolio_pic/indobert.png",
+      "image": "./assets/portofolio_pic/comparative-indobert.png",
       "category": "data-science",
       "github": "https://github.com/CrysanthaMonica/Comparative-Analysis-of-1-Stage-and-2-Stage-Classification-Models-Using-IndoBERT/",
       "liveDemo": ""
@@ -97,7 +97,7 @@ const projectData = {
     {
       "title": "Image Generation with Generative Adversarial Networks (GAN)",
       "desc": "<br> Implemented a custom GAN model from scratch to generate synthetic fashion images using the Fashion MNIST dataset.<br> Built and trained Generator and Discriminator networks using TensorFlow/Keras, and evaluated the image quality using Fréchet Inception Distance (FID).<br> Demonstrated improved realism in generated images across epochs and gained insights into adversarial training dynamics.",
-      "image": "./assets/portofolio_pic/gan.png",
+      "image": "./assets/portofolio_pic/fashion-mnist.jpeg",
       "category": "data-science",
       "github": "https://github.com/CrysanthaMonica/Image-Generation-with-Generative-Adversarial-Networks-GAN-",
       "liveDemo": ""
