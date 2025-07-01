@@ -79,6 +79,30 @@ document.addEventListener("DOMContentLoaded", function () {
 const projectData = {
   "projects": [
     {
+    "title": "Respiratory Disease Audio-Based Classification",
+    "desc": "<br> Developed and evaluated hybrid CNN+LSTM and CNN+SVM models for classifying clinical respiratory audio into COPD and non-COPD categories.<br> Applied MFCC-based feature extraction and advanced preprocessing techniques such as pre-emphasis, noise reduction, and time-based augmentation.<br> Achieved 88% test accuracy using CNN+LSTM model and provided comparative insights on model performance to support diagnostic applications in the medical field.",
+    "image": "./assets/portofolio_pic/progress.png",
+    "category": "data-science",
+    "github": "https://github.com/CrysanthaMonica/Respiratory-Disease-Audio-Based-Machine-Learning",
+    "liveDemo": ""
+    }, 
+    {
+      "title": "Comparative Analysis of 1-Stage and 2-Stage Text Classification Using IndoBERT",
+      "desc": "<br> Built and evaluated IndoBERT-based models to classify Indonesian sports news.<br> Compared a direct 1-stage model with a 2-stage hierarchical approach, where the first stage classifies texts as Sepak Bola or Non-Sepak Bola, and the second classifies Liga categories.<br> Achieved 100% accuracy and F1-score for minority class (Liga Italia) using the 2-stage model, highlighting the benefit of hierarchical modeling in imbalanced datasets.",
+      "image": "./assets/portofolio_pic/indobert.png",
+      "category": "data-science",
+      "github": "https://github.com/CrysanthaMonica/Comparative-Analysis-of-1-Stage-and-2-Stage-Classification-Models-Using-IndoBERT/",
+      "liveDemo": ""
+    },
+    {
+      "title": "Image Generation with Generative Adversarial Networks (GAN)",
+      "desc": "<br> Implemented a custom GAN model from scratch to generate synthetic fashion images using the Fashion MNIST dataset.<br> Built and trained Generator and Discriminator networks using TensorFlow/Keras, and evaluated the image quality using Fréchet Inception Distance (FID).<br> Demonstrated improved realism in generated images across epochs and gained insights into adversarial training dynamics.",
+      "image": "./assets/portofolio_pic/gan.png",
+      "category": "data-science",
+      "github": "https://github.com/CrysanthaMonica/Image-Generation-with-Generative-Adversarial-Networks-GAN-",
+      "liveDemo": ""
+    },
+    {
       "title": "Coffee Preverence Survey and Sampling",
       "desc" : "This project analyzes survey data to understand coffee consumption patterns and preferences. <br>The analysis explores various factors such as demographics, consumption frequency, and brand preferences.",
       "image": "assets/portofolio_pic/ssm.jpeg",
@@ -135,19 +159,19 @@ const projectData = {
       "liveDemo": "https://drive.google.com/file/d/1gASJKM_9Lvcm33TiWemtDsSr6Bh35yVB/view?usp=drive_link"
     },
     {
+      "title": "Water Potability Prediction - Bayesian Method",
+      "desc" : "This project utilizes machine learning with a Bayesian approach to predict the potability of water in Indonesia, addressing the need for clean water as outlined in the UN's Sustainable Development Goals (SDG). <br>Using a logistic regression model and Bayesian Data Analysis, the project aims to understand the factors influencing water quality based on data from Kaggle's Water Potability dataset.",
+      "image": "./assets/portofolio_pic/ba-2.jpeg",
+      "category": "data-analyst",
+      "github": "https://github.com/CrysanthaMonica/Water-Potability-Prediction",
+      "liveDemo": "https://drive.google.com/file/d/1mijinm6jtb4bb5uNAg1OhEzB271It1Sd/view?usp=sharing"
+    },
+    {
       "title": "Customer Service Gen AI with Sentiment Model",
       "desc" : "<b>[Currently in Progress].</b><br> This project focuses on developing a customer service automation system that leverages sentiment analysis to generate context-appropriate responses based on customer queries. <br>The system detects the tone and sentiment embedded in the customer’s input (formal, informal, friendly, or assertive) and automatically generates tailored replies, improving the quality and efficiency of customer service interactions.",
       "image": "./assets/portofolio_pic/progress.png",
       "category": "ai-projects",
       "github": "https://github.com/CrysanthaMonica/Customer-Service-Gen-AI-with-Sentiment-Model",
-      "liveDemo": ""
-    }, 
-    {
-      "title": "Respiratory Disease Audio Based Machine Learning",
-      "desc" : "<b>[Currently in Research Phase].</b><br> This project focuses on exploring and researching pretrained models and libraries used for audio dataset analysis. <br>The main objective is to develop a machine learning model that can classify respiratory sounds into specific respiratory diseases. By leveraging advanced audio processing techniques and pretrained models, this project aims to contribute to the medical industry's advancements in diagnosing respiratory conditions through sound classification.",
-      "image": "./assets/portofolio_pic/progress.png",
-      "category": "data-science",
-      "github": "https://github.com/CrysanthaMonica/Respiratory-Disease-Audio-Based-Machine-Learning",
       "liveDemo": ""
     }, 
     {
@@ -166,22 +190,14 @@ const projectData = {
       "github": "https://github.com/CrysanthaMonica/Movies-Sentiment-Analyst",
       "liveDemo": ""
     }, 
-    {
-      "title": "Customer Complaint Dashboard",
-      "desc" : "<b>[Currently in Progress].</b><br> The project involves creating a Customer Complaint Dashboard in Tableau that visualizes and analyzes customer complaint data. <br>The dashboard utilizes parameters instead of traditional filters to enhance interactivity and usability. Key components include connecting to a CSV data source, defining key performance indicators (KPIs), visualizing complaint distribution by product type, <br>and creating dynamic charts to track complaints over time and by request type. <br>The goal is to provide valuable insights into customer feedback and improve decision-making regarding product and service enhancements.",
-      "image": "./assets/portofolio_pic/progress.png",
-      "category": "data-analyst",
-      "github": "https://github.com/CrysanthaMonica/Customer-Complaint-Dashboard",
-      "liveDemo": ""
-    }, 
-    {
-      "title": "Water Potability Prediction - Bayesian Method",
-      "desc" : "This project utilizes machine learning with a Bayesian approach to predict the potability of water in Indonesia, addressing the need for clean water as outlined in the UN's Sustainable Development Goals (SDG). <br>Using a logistic regression model and Bayesian Data Analysis, the project aims to understand the factors influencing water quality based on data from Kaggle's Water Potability dataset.",
-      "image": "./assets/portofolio_pic/ba-2.jpeg",
-      "category": "data-analyst",
-      "github": "https://github.com/CrysanthaMonica/Water-Potability-Prediction",
-      "liveDemo": "https://drive.google.com/file/d/1mijinm6jtb4bb5uNAg1OhEzB271It1Sd/view?usp=sharing"
-    }
+    // {
+    //   "title": "Customer Complaint Dashboard",
+    //   "desc" : "<b>[Currently in Progress].</b><br> The project involves creating a Customer Complaint Dashboard in Tableau that visualizes and analyzes customer complaint data. <br>The dashboard utilizes parameters instead of traditional filters to enhance interactivity and usability. Key components include connecting to a CSV data source, defining key performance indicators (KPIs), visualizing complaint distribution by product type, <br>and creating dynamic charts to track complaints over time and by request type. <br>The goal is to provide valuable insights into customer feedback and improve decision-making regarding product and service enhancements.",
+    //   "image": "./assets/portofolio_pic/progress.png",
+    //   "category": "data-analyst",
+    //   "github": "https://github.com/CrysanthaMonica/Customer-Complaint-Dashboard",
+    //   "liveDemo": ""
+    // }
   ]
 }
 
